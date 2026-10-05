@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="oscuro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FX Esports Torneo Plataforma — Torneos y WOW 1vs1</title>
+<meta name="description" content="Plataforma de torneos competitivos de PUBG Mobile. Circuito, ranking, partidas, equipos y jugadores de FX Esports.">
+<link rel="canonical" href="https://fxesports.example/">
+<meta property="og:title" content="FX Esports Torneo Plataforma">
+<meta property="og:description" content="Plataforma de torneos competitivos de PUBG Mobile.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="estilos/fuentes.css">
+<link rel="stylesheet" href="estilos/tokens.css">
+<link rel="stylesheet" href="estilos/base.css">
+<link rel="stylesheet" href="estilos/componentes.css">
+<link rel="stylesheet" href="estilos/paginas.css">
+<script src="scripts/tema.js"></script>
+</head>
+<body>
+<a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" data-cabecera>
+  <div class="contenedor cabecera__interior">
+    <a class="marca" href="/" aria-label="FX Esports Torneo Plataforma, inicio">
+      <span class="marca__sigla" aria-hidden="true">FX</span>
+      <span class="marca__texto">
+        <span class="marca__nombre">FX Esports</span>
+        <span class="marca__sub">Torneo Plataforma</span>
+      </span>
+    </a>
+
+    <button class="icono-boton" type="button" data-menu-abrir aria-expanded="false" aria-controls="menu-principal">
+      <span class="visualmente-oculto">Abrir menú</span>
+      <span aria-hidden="true" class="icono-barras"></span>
+    </button>
+
+    <nav class="nav" id="menu-principal" data-menu aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="/torneos">Torneos</a></li>
+        <li><a href="/partidas">Partidas</a></li>
+        <li><a href="/jugadores">Jugadores</a></li>
+        <li><a href="/equipos">Equipos</a></li>
+        <li><a href="/ranking">Ranking</a></li>
+        <li><a href="/anuncios">Anuncios</a></li>
+        <li><a href="/sugerencias">Sugerencias</a></li>
+      </ul>
+      <div class="nav__acciones">
+        <a class="boton boton--fantasma" href="/buscar">Buscar</a>
+        <button class="boton boton--fantasma" type="button" data-abrir-panel>Tema</button>
+        <a class="boton boton--primario" href="/acceso">Entrar</a>
+      </div>
+    </nav>
+
+    <div class="cabecera__util">
+      <a class="icono-boton" href="/notificaciones" aria-label="Notificaciones">
+        <span class="icono-campana" aria-hidden="true"></span>
+        <span class="contador" data-contador-notificaciones hidden>0</span>
+      </a>
+      <button class="icono-boton icono-boton--tema" type="button" data-abrir-panel aria-label="Cambiar tema">
+        <span class="icono-tema" aria-hidden="true"></span>
+      </button>
+      <span class="estado-sistema" data-estado-sistema title="Estado del sistema">
+        <span class="estado-sistema__punto" aria-hidden="true"></span>
+        <span class="visualmente-oculto">Estado del sistema: conectando</span>
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="panel-lateral" data-panel hidden aria-labelledby="titulo-panel">
+  <div class="panel-lateral__fondo" data-cerrar-panel></div>
+  <section class="panel-lateral__cuerpo" role="dialog" aria-modal="true">
+    <header class="panel-lateral__cabecera">
+      <h2 id="titulo-panel">Apariencia</h2>
+      <button class="icono-boton" type="button" data-cerrar-panel aria-label="Cerrar panel">✕</button>
+    </header>
+    <div class="panel-lateral__contenido">
+      <fieldset class="campo-grupo">
+        <legend>Tema</legend>
+        <div class="opciones-tema" role="radiogroup" aria-label="Selección de tema">
+          <button class="opcion-tema" type="button" role="radio" aria-checked="true" data-tema="oscuro">
+            <span class="muestra-tema muestra-tema--oscuro" aria-hidden="true"></span>
+            <span>Oscuro</span>
+          </button>
+          <button class="opcion-tema" type="button" role="radio" aria-checked="false" data-tema="claro">
+            <span class="muestra-tema muestra-tema--claro" aria-hidden="true"></span>
+            <span>Claro</span>
+          </button>
+          <button class="opcion-tema" type="button" role="radio" aria-checked="false" data-tema="blanco">
+            <span class="muestra-tema muestra-tema--blanco" aria-hidden="true"></span>
+            <span>Blanco</span>
+          </button>
+        </div>
+      </fieldset>
+
+      <fieldset class="campo-grupo" data-grupo-acento>
+        <legend>Color de acento</legend>
+        <p class="ayuda">Solo se aplica al tema Oscuro. Los temas Claro y Blanco mantienen su contraste.</p>
+        <div class="opciones-acento" role="radiogroup" aria-label="Color de acento">
+          <button class="opcion-acento" type="button" role="radio" aria-checked="true" style="--muestra:#22d3ee" data-acento="#22d3ee"><span class="visualmente-oculto">Cian FX</span></button>
+          <button class="opcion-acento" type="button" role="radio" aria-checked="false" style="--muestra:#f97316" data-acento="#f97316"><span class="visualmente-oculto">Naranja</span></button>
+          <button class="opcion-acento" type="button" role="radio" aria-checked="false" style="--muestra:#22c55e" data-acento="#22c55e"><span class="visualmente-oculto">Verde</span></button>
+          <button class="opcion-acento" type="button" role="radio" aria-checked="false" style="--muestra:#a855f7" data-acento="#a855f7"><span class="visualmente-oculto">Violeta</span></button>
+          <button class="opcion-acento" type="button" role="radio" aria-checked="false" style="--muestra:#e11d48" data-acento="#e11d48"><span class="visualmente-oculto">Rojo</span></button>
+        </div>
+      </fieldset>
+
+      <h3 class="panel-lateral__subtitulo">Accesos</h3>
+      <ul class="lista-enlaces">
+        <li><a href="/mi-cuenta">Mi cuenta</a></li>
+        <li><a href="/mi-equipo">Mi equipo</a></li>
+        <li><a href="/perfil-vip">Perfil VIP</a></li>
+        <li><a href="/organizadores">Organizadores</a></li>
+        <li><a href="/admin">Administración</a></li>
+        <li><a href="/privacidad">Privacidad</a></li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<main id="contenido" data-pagina></main>
+
+<footer class="pie">
+  <div class="contenedor pie__interior">
+    <div class="pie__marca">
+      <span class="marca__sigla" aria-hidden="true">FX</span>
+      <div>
+        <p class="pie__nombre">FX Esports Torneo Plataforma</p>
+        <p class="pie__desc">Plataforma de torneos competitivos de PUBG Mobile.</p>
+      </div>
+    </div>
+    <nav class="pie__nav" aria-label="Navegación del pie">
+      <div>
+        <h2 class="pie__titulo">Competición</h2>
+        <ul>
+          <li><a href="/torneos">Torneos</a></li>
+          <li><a href="/partidas">Partidas</a></li>
+          <li><a href="/ranking">Ranking</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Comunidad</h2>
+        <ul>
+          <li><a href="/jugadores">Jugadores</a></li>
+          <li><a href="/equipos">Equipos</a></li>
+          <li><a href="/anuncios">Anuncios</a></li>
+          <li><a href="/sugerencias">Sugerencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Plataforma</h2>
+        <ul>
+          <li><a href="/acceso">Acceso</a></li>
+          <li><a href="/mi-cuenta">Mi cuenta</a></li>
+          <li><a href="/privacidad">Privacidad</a></li>
+          <li><a href="/buscar">Buscar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="contenedor pie__legal">
+    <p>© 2026 FX Esports. Todos los derechos reservados.</p>
+    <p>Todos los datos mostrados proceden de la base de datos o de información introducida por administradores y usuarios.</p>
+  </div>
+</footer>
+
+<div class="avisos" data-avisos aria-live="polite" aria-atomic="false"></div>
+<div class="cookies" data-cookies hidden>…</div>
+
+<script src="scripts/util.js"></script>
+<script src="scripts/plantillas.js"></script>
+<script src="scripts/componentes.js"></script>
+<script src="scripts/paginas.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>
