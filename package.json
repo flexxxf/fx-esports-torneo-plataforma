@@ -1,0 +1,16 @@
+{
+  "name": "fx-esports-torneo-plataforma",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma de torneos competitivos de PUBG Mobile — FX Esports",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "iniciar": "node servidor/servidor.mjs",
+    "revisar": "node herramientas/revisar.mjs"
+  },
+  "dependencies": {},
+  "license": "MIT"
+}
