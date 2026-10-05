@@ -1,0 +1,96 @@
+:root {
+  /* Tipografías alojadas en el propio repo (ver estilos/fuentes/) */
+  --fuente-titulo: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --fuente-texto: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fuente-datos: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Escala tipográfica */
+  --texto-xs: 0.75rem;
+  --texto-sm: 0.875rem;
+  --texto-base: 1rem;
+  --texto-lg: 1.125rem;
+  --titulo-4: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+  --titulo-3: clamp(1.35rem, 1.15rem + 1vw, 1.9rem);
+  --titulo-2: clamp(1.8rem, 1.4rem + 2.2vw, 3rem);
+  --titulo-1: clamp(2.4rem, 1.6rem + 5vw, 5.5rem);
+
+  /* Espaciado */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-5: 1.5rem;
+  --esp-6: 2.5rem;
+  --esp-7: 4rem;
+
+  --ancho-max: 84rem;
+  --radio: 2px;
+  --radio-suave: 4px;
+  --toque: 44px;
+}
+
+/* TEMA OSCURO — predeterminado */
+html[data-theme="oscuro"] {
+  color-scheme: dark;
+  --color-fondo: #08090b;
+  --color-fondo-alt: #0e1013;
+  --color-superficie: #12151a;
+  --color-superficie-2: #171b21;
+  --color-borde: #242a33;
+  --color-borde-fuerte: #39414d;
+  --color-texto: #eef1f4;
+  --color-texto-suave: #a6adba;
+  --color-texto-tenue: #6f7885;
+  --color-acento: #22d3ee;
+  --color-acento-texto: #04141a;
+  --color-live: #ff3b30;
+  --color-exito: #22c55e;
+  --color-aviso: #f59e0b;
+  --color-error: #ef4444;
+  --sombra: none;
+  --grano: 0.035;
+}
+
+/* TEMA CLARO */
+html[data-theme="claro"] {
+  color-scheme: light;
+  --color-fondo: #eef0f3;
+  --color-fondo-alt: #e3e6eb;
+  --color-superficie: #ffffff;
+  --color-superficie-2: #f5f7f9;
+  --color-borde: #ccd2da;
+  --color-borde-fuerte: #a3acb8;
+  --color-texto: #10141a;
+  --color-texto-suave: #4b5563;
+  --color-texto-tenue: #6b7280;
+  --color-acento: #0e7490;
+  --color-acento-texto: #ffffff;
+  --color-live: #c81e1e;
+  --color-exito: #15803d;
+  --color-aviso: #b45309;
+  --color-error: #b91c1c;
+  --sombra: 0 1px 2px rgba(16, 20, 26, 0.08);
+  --grano: 0;
+}
+
+/* TEMA BLANCO */
+html[data-theme="blanco"] {
+  color-scheme: light;
+  --color-fondo: #ffffff;
+  --color-fondo-alt: #fafbfc;
+  --color-superficie: #ffffff;
+  --color-superficie-2: #f4f6f8;
+  --color-borde: #e2e6ea;
+  --color-borde-fuerte: #b9c0c9;
+  --color-texto: #0a0c10;
+  --color-texto-suave: #45505c;
+  --color-texto-tenue: #6b7480;
+  --color-acento: #0b6b84;
+  --color-acento-texto: #ffffff;
+  --color-live: #c81e1e;
+  --color-exito: #15803d;
+  --color-aviso: #b45309;
+  --color-error: #b91c1c;
+  --sombra: none;
+  --grano: 0;
+}
